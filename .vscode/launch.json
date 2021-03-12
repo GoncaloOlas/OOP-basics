@@ -8,7 +8,7 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/oop.exe",
+            "program": "c:\\Users\\mrvor\\Desktop\\Random_docs\\OOP-basics\\oop.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
