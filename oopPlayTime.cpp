@@ -70,14 +70,39 @@ class receptionist
     private:
         int salary;
         bool receivedSalary;
-
 };
 
-int main()
-{
-    customer john;
-    john.name = "John";
+int openShop(int dayStart){
+    return dayStart = 1;
+}
 
-    std::cout<<john.name;
+int haveCustomer(int customerCount){
+    customerCount +=1;
+    return customerCount;
+}
+
+int main()
+{   
+    int dayStart = 0;
+    openShop(dayStart);
+    
+    if(dayStart=1){
+        std::cout<<"Shop Open\n";
+    }
+    
+    int customersInLine = 0;
+    std::cout<<"How many customers do we have in line? ";
+    std::cin>>customersInLine;
+    
+    int customerCount = 0;
+    if(customersInLine != 0){
+        haveCustomer(customerCount);
+    }
+
+       customer john;
+        john.name = "John";
+        std::cout<<john.name; 
+
+
     return 0;
 }
