@@ -77,7 +77,7 @@ int openShop(int dayStart){
 }
 
 int haveCustomer(int customerCount){
-    customerCount +=1;
+    customerCount -=1;
     return customerCount;
 }
 
@@ -93,12 +93,15 @@ int main()
     int customersInLine = 0;
     std::cout<<"How many customers do we have in line? ";
     std::cin>>customersInLine;
-    
-    int customerCount = 0;
+
+    int customerCount = customersInLine;
     if(customersInLine != 0){
+        
         haveCustomer(customerCount);
     }
 
+    int waitTime = customerCount * 30;
+     
        customer john;
         john.name = "John";
         std::cout<<john.name; 
